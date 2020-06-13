@@ -21,6 +21,7 @@
 	<title>Simple CRUD - Update</title>
 </head>
 <body>
+	<a href="view.php"><button>BACK</button></a>
 	<h1>Create Product</h1>
 	<form action="doUpdateProduct.php" method="post" enctype="multipart/form-data">
 	<table>
@@ -50,7 +51,6 @@
 			<td></td>
 			<td><button>Update Product</button></td>
 		</tr>
-		<tr><a href="view.php"><button>BACK</button></a></tr>
 	</table>
 	</form>
 	<?php
