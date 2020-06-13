@@ -19,11 +19,11 @@ session_start();
 		}else {
 			$filePath="crud/".basename($productImage["name"]);
 			move_uploaded_file($productImage["tmp_name"],$filePath);
-
+			
 			$connection -> query("INSERT INTO product VALUES (null,'".$productName."','".$productDescription."','".$productPrice."','".$filePath."')");
 			$message = "succesfully added new product";
 		}
-		$_SESSION["message"]=$message;
+		$_SESSION["message"] = $message;
 	}
 	header("location:insert.php");
 	exit();
