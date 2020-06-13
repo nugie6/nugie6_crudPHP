@@ -22,8 +22,13 @@
 					description : <?=$fetchProduct["productDescription"]?>
 				</td>				
 			</tr>
+			<tr>
+				<td>
+					<a href="update.php?id=<?=$fetchProduct["productID"]?>"><button>UPDATE</button></a>
+					<a href="delete.php?id=<?=$fetchProduct["productID"]?>"><button>DELETE</button></a>
+				</td>
+			</tr>>
 		</table>
-
 		<?php
 		}
 	?>
